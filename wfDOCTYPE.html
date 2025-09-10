@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workforce Development & Career Services Partnership Survey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto max-w-2xl p-4 sm:p-8">
+        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8">
+            <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Workforce Development & Career Services Partnership Survey</h1>
+            <p class="text-gray-600 mb-6">For Workforce Development Organizations</p>
+            <div class="mb-6 border-l-4 border-indigo-500 pl-4">
+                <p class="text-sm text-gray-700">Thank you for your time. This survey is designed to explore potential collaborations between professional career coaching services and workforce development organizations. We aim to understand your needs, the challenges your clients face, and how a partnership could enhance employment outcomes. Your confidential feedback is greatly appreciated and will take approximately 5-7 minutes to complete.</p>
+            </div>
+
+            <form action="#" method="POST" class="space-y-8">
+                <!-- Section 1 -->
+                <div>
+                    <h2 class="text-xl font-semibold border-b pb-2 mb-4">Section 1: About Your Organization</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="block text-sm font-medium text-gray-700 mb-2">1. What type of organization do you represent?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center"><input type="radio" name="org-type" value="government" class="mr-2 text-indigo-600 focus:ring-indigo-500"> Government / Public Agency</label>
+                                <label class="flex items-center"><input type="radio" name="org-type" value="non-profit" class="mr-2 text-indigo-600 focus:ring-indigo-500"> Non-Profit / Community-Based Organization</label>
+                                <label class="flex items-center"><input type="radio" name="org-type" value="private-training" class="mr-2 text-indigo-600 focus:ring-indigo-500"> Private, for-profit training provider</label>
+                                <label class="flex items-center"><input type="radio" name="org-type" value="education" class="mr-2 text-indigo-600 focus:ring-indigo-500"> Educational Institution (e.g., community college, vocational school)</label>
+                                <div class="flex items-center">
+                                    <input type="radio" name="org-type" value="other" class="mr-2 text-indigo-600 focus:ring-indigo-500">
+                                    <label for="org-type-other" class="mr-2">Other:</label>
+                                    <input type="text" id="org-type-other" name="org-type-other-text" class="flex-grow p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-sm">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="block text-sm font-medium text-gray-700 mb-2">2. What primary populations do you serve? (Select all that apply)</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center"><input type="checkbox" name="population[]" value="unemployed" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Unemployed individuals</label>
+                                <label class="flex items-center"><input type="checkbox" name="population[]" value="underemployed" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Underemployed / low-wage workers</label>
+                                <label class="flex items-center"><input type="checkbox" name="population[]" value="youth" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Youth / young adults</label>
+                                <label class="flex items-center"><input type="checkbox" name="population[]" value="veterans" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Veterans</label>
+                                <label class="flex items-center"><input type="checkbox" name="population[]" value="disabilities" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Individuals with disabilities</label>
+                                <label class="flex items-center"><input type="checkbox" name="population[]" value="career-changers" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Career changers</label>
+                                <label class="flex items-center"><input type="checkbox" name="population[]" value="formerly-incarcerated" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Formerly incarcerated individuals</label>
+                                <div class="flex items-center">
+                                    <input type="checkbox" name="population[]" value="other" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500">
+                                    <label for="population-other" class="mr-2">Other:</label>
+                                    <input type="text" id="population-other" name="population-other-text" class="flex-grow p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-sm">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="block text-sm font-medium text-gray-700 mb-2">3. What career-related services do you currently provide? (Select all that apply)</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center"><input type="checkbox" name="services[]" value="resume" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Basic resume and cover letter assistance</label>
+                                <label class="flex items-center"><input type="checkbox" name="services[]" value="job-board" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Job board access and application support</label>
+                                <label class="flex items-center"><input type="checkbox" name="services[]" value="workshops" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Group workshops (e.g., interviewing basics)</label>
+                                <label class="flex items-center"><input type="checkbox" name="services[]" value="job-fairs" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Job fairs and employer connection events</label>
+                                <label class="flex items-center"><input type="checkbox" name="services[]" value="training" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Skills training / certification programs</label>
+                                <label class="flex items-center"><input type="checkbox" name="services[]" value="counseling" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> One-on-one counseling or case management</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div>
+                    <h2 class="text-xl font-semibold border-b pb-2 mb-4">Section 2: Client Needs & Service Gaps</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="block text-sm font-medium text-gray-700 mb-2">4. What are the most significant barriers your clients face in securing and retaining quality employment? (Select up to three)</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center"><input type="checkbox" name="barriers[]" value="soft-skills" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Lack of confidence or "soft skills"</label>
+                                <label class="flex items-center"><input type="checkbox" name="barriers[]" value="interviews" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Difficulty performing well in interviews</label>
+                                <label class="flex items-center"><input type="checkbox" name="barriers[]" value="ineffective-resume" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Unprofessional or ineffective resumes</label>
+                                <label class="flex items-center"><input type="checkbox" name="barriers[]" value="unclear-goals" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Unclear career goals or direction</label>
+                                <label class="flex items-center"><input type="checkbox" name="barriers[]" value="history-gaps" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Gaps in work history or specific skill sets</label>
+                                <label class="flex items-center"><input type="checkbox" name="barriers[]" value="navigation" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Difficulty navigating the online job search process</label>
+                                <label class="flex items-center"><input type="checkbox" name="barriers[]" value="systemic" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Systemic barriers (e.g., transportation, childcare)</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="need-for-coaching" class="block text-sm font-medium text-gray-700 mb-2">5. On a scale of 1 (Not a Gap) to 5 (Significant Gap), how would you rate the need for more intensive, one-on-one career coaching for your clients?</label>
+                             <div class="flex justify-between text-xs text-gray-500 px-1">
+                                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                            </div>
+                            <input type="range" id="need-for-coaching" name="need-for-coaching" min="1" max="5" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div>
+                    <h2 class="text-xl font-semibold border-b pb-2 mb-4">Section 3: Exploring a Partnership</h2>
+                    <div class="space-y-6">
+                         <div>
+                            <label for="partnership-value" class="block text-sm font-medium text-gray-700 mb-2">6. How valuable would a partnership with a professional career coaching service be for improving your clients' employment outcomes?</label>
+                             <div class="flex justify-between text-xs text-gray-500 px-1">
+                                <span>1 (Not at all)</span><span></span><span></span><span></span><span>5 (Extremely)</span>
+                            </div>
+                            <input type="range" id="partnership-value" name="partnership-value" min="1" max="5" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                        </div>
+                        <div>
+                            <p class="block text-sm font-medium text-gray-700 mb-2">7. Which specialized coaching services would be most beneficial for your client population? (Please select your top 3)</p>
+                             <div class="space-y-2">
+                                <label class="flex items-center"><input type="checkbox" name="beneficial-services[]" value="mock-interview" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Intensive Mock Interview Preparation</label>
+                                <label class="flex items-center"><input type="checkbox" name="beneficial-services[]" value="career-planning" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Personalized Career Path Planning</label>
+                                <label class="flex items-center"><input type="checkbox" name="beneficial-services[]" value="mindset-coaching" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Confidence & Mindset Coaching</label>
+                                <label class="flex items-center"><input type="checkbox" name="beneficial-services[]" value="resume-linkedin" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Professional Resume & LinkedIn Overhaul</label>
+                                <label class="flex items-center"><input type="checkbox" name="beneficial-services[]" value="retention-coaching" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Job Retention Coaching (First 90 Days)</label>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="block text-sm font-medium text-gray-700 mb-2">8. What potential models for partnership would be most feasible for your organization? (Select all that apply)</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center"><input type="checkbox" name="partnership-model[]" value="referral" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Referring clients to a trusted external provider</label>
+                                <label class="flex items-center"><input type="checkbox" name="partnership-model[]" value="workshops" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Contracting a coach to deliver workshops for our clients</label>
+                                <label class="flex items-center"><input type="checkbox" name="partnership-model[]" value="integration" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Integrating a coach into our existing programs (funded by grants or other sources)</label>
+                                <label class="flex items-center"><input type="checkbox" name="partnership-model[]" value="fee-for-service" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> A "fee-for-service" model where the organization pays per client served</label>
+                                <label class="flex items-center"><input type="checkbox" name="partnership-model[]" value="unsure" class="mr-2 rounded text-indigo-600 focus:ring-indigo-500"> Unsure</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submission -->
+                <div class="pt-6 border-t mt-8">
+                    <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors">
+                        Submit Survey
+                    </button>
+                    <p class="text-xs text-center text-gray-500 mt-4">Thank you for your valuable input! We appreciate your dedication to empowering the workforce.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
